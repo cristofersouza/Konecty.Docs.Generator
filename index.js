@@ -37,8 +37,8 @@ Handlebars.registerHelper('equal', function(v1, v2, options) {
 
 Metalsmith(__dirname)
 	.metadata({
-		title: "Rocket.Chat Docs",
-		description: "Rocket.Chat Docs",
+		title: "Konecty Docs",
+		description: "Konecty Docs",
 		generator: "Metalsmith",
 		url: "http://www.metalsmith.io/"
 	})

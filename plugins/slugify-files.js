@@ -1,5 +1,5 @@
 var async = require('async');
-var slug = require('./rocketchat-slug.js');
+var slug = require('./konecty-slug.js');
 
 slugifyFiles = function() {
 	var self = this;

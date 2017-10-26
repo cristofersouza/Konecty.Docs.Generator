@@ -1,7 +1,7 @@
 var extname = require('path').extname;
 var async = require('async');
 var cheerio = require('cheerio');
-var slug = require('./rocketchat-slug.js');
+var slug = require('./konecty-slug.js');
 
 module.exports = slugifyLinks;
 

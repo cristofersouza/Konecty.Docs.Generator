@@ -23,9 +23,9 @@ function slug(filePath, data, removeMDLink) {
 			var title = fileParts[totalParts - previousPart].replace(new RegExp(`(^|\${path.sep})[0-9. ]+`, 'g'), '$1');
 
 			if (title === 'index.md') {
-				data.title = 'Rocket.Chat Docs';
+				data.title = 'Konecty Docs';
 			} else {
-				data.title = 'Rocket.Chat Docs - ' + title;
+				data.title = 'Konecty Docs - ' + title;
 			}
 		}
 	}

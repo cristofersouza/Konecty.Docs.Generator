@@ -1,5 +1,5 @@
 {
-  "name": "Rocket.Chat.Docs.Generator",
+  "name": "Konecty.Docs.Generator",
   "private": true,
   "scripts": {
     "serve": "gulp"
