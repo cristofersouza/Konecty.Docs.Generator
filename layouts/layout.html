@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>{{ title }}</title>
+
+	<meta name="description" content="{{ description }}">
+	<link rel="stylesheet" href="{{rootPath}}assets/main.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.4.0/styles/default.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/senna.js/2.0.4/senna.css" />
+
+	<!-- Senna is included here so it is loaded before the page loads. -->
+	<script src="https://cdn.jsdelivr.net/senna.js/2.0.4/senna-min.js"></script>
+
+	<link rel="icon" href="{{rootPath}}assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<div class="header">
+		{{> header}}
+	</div>
+	<div class="main">
+		<div class="sidebar">
+			{{> sidebar }}
+		</div>
+		<div id="content" class="content">
+			<article>
+				<header>
+					<a href="{{githubPath}}">Edit on GitHub</a>
+				</header>
+				{{{ contents }}}
+			</article>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="{{rootPath}}assets/main.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+	<script type="text/javascript">
+		docsearch({
+			apiKey: '75295a81b01359d7048b766a0fe98a2f',
+			indexName: 'rocketchat',
+			inputSelector: '#search'
+		});
+	</script>
+
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MLJ76N"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MLJ76N');</script>
+	<!-- End Google Tag Manager -->
+</body>
+</html>
