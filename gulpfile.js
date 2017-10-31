@@ -86,7 +86,7 @@ gulp.task('watch', function() {
 // Git clone task to fetch source files from Rocket.Chat.Docs which is also
 // dependent on the 'clean' task
 gulp.task('git', ['clean'], function(cb) {
-	plugins.git.clone('https://github.com/RocketChat/Rocket.Chat.Docs', { args: dirs.source }, function(err) {
+	plugins.git.clone('https://github.com/Konecty/Konecty.Docs', { args: dirs.source }, function(err) {
 		if (err) throw err;
 		cb();
 	});
